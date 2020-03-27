@@ -1,0 +1,9 @@
+correios\core\ThreadDriver.class
+correios\actions\BaseActions.class
+correios\actions\BuscaCEPEnderecoAction.class
+correios\core\DriverFactory.class
+correios\entidades\BuscaCepDTO.class
+correios\constants\Globals.class
+correios\core\IBrowser.class
+correios\core\Utils.class
+correios\core\Browser.class

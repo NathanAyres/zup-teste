@@ -1,0 +1,54 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sqlite
+
+# OS generated files #
+######a################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Jdeveloper #
+######################
+SCA-INF
+gen-classes
+lib
+SCA-INF\classes
+.settings*
+.settings/*
+.settings/org.eclipse.wst.jsdt.ui.superType.container
+.settings/.jsdtscope
+.settings/org.eclipse.wst.jsdt.ui.superType.name
+.data
+.data/*
+.tmp
+.targuet/
+

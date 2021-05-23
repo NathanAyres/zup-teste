@@ -29,7 +29,7 @@ public class ComprasAction extends BaseActions {
 
 	public void selecionarProduto() throws Exception {
 		driver.findElement(By.xpath(
-				"//div[@class='a-section aok-relative s-image-fixed-height']/img[@src='https://m.media-amazon.com/images/I/61Rr8uxmREL._AC_UY218_ML3_.jpg']")).click();
+				"//div[@class='a-section aok-relative s-image-square-aspect']/img[@src='https://m.media-amazon.com/images/I/41GZCWFJB1L._AC_UL320_.jpg']")).click();
 	}
 
 	public void adicionarCarrinho() {
@@ -37,9 +37,9 @@ public class ComprasAction extends BaseActions {
 		addCarrinho.click();
 	}
 	
-	public boolean verificarCarrinho() {
-		driver.findElement(By.xpath("//a[@class='nav-a nav-a-2']")).click();
-		WebElement btnFecharPedido = driver.findElement(By.xpath("//div[@class='a-box a-color-alternate-background sc-buy-box-inner-box']"));
+	public boolean verificarCarrinho() throws Exception {
+		driver.findElement(By.id("nav-cart-count-container")).click(); 
+		WebElement btnFecharPedido = driver.findElement(By.xpath("//span[@class='a-button a-button-normal a-button-span12 a-button-primary']"));
 		boolean validaCarrinho = btnFecharPedido.isDisplayed();
 		return validaCarrinho;
 	}

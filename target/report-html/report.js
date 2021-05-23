@@ -19,7 +19,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 9016249400,
+  "duration": 2379241600,
   "status": "passed"
 });
 formatter.scenario({
@@ -60,32 +60,32 @@ formatter.match({
   "location": "ComprasSteps.que_pesquiso_um_iten_no_e_comerce_amazon()"
 });
 formatter.result({
-  "duration": 2689868600,
+  "duration": 1199593500,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprasSteps.valido_a_pesquisa()"
 });
 formatter.result({
-  "duration": 74314300,
+  "duration": 18698400,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprasSteps.adiciono_esse_item_ao_carrinho()"
 });
 formatter.result({
-  "duration": 7940742400,
+  "duration": 3817634100,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprasSteps.valido_se_o_iten_se_encontra_no_carrinho()"
 });
 formatter.result({
-  "duration": 1750055200,
+  "duration": 1262327600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 699446800,
+  "duration": 617175900,
   "status": "passed"
 });
 });

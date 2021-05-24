@@ -10,18 +10,18 @@ public class ComprasAction extends BaseActions {
 		super(driver);
 	}
 
-	public void pesquisarIten(String item) {
+	public void pesquisarItem(String item) {
 		WebElement campoPesquisa = driver.findElement(By.id("twotabsearchtextbox"));
 		campoPesquisa.click();
 		campoPesquisa.sendKeys(item);
 		campoPesquisa.submit();
 	}
 
-	public void validarPesquisa(String iten) throws Exception {
+	public void validarPesquisa(String item) throws Exception {
 		String pesquisa = driver.findElement(By.xpath(
 				"//div[@class=\"a-section a-spacing-small a-spacing-top-small\"]/span[@class=\"a-color-state a-text-bold\"]"))
 				.getText();
-		boolean compara = pesquisa.contains(iten);
+		boolean compara = pesquisa.contains(item);
 		if (compara == false) {
 			throw new Exception("Retorno de Pesquisa incorreto");
 		}
@@ -38,6 +38,7 @@ public class ComprasAction extends BaseActions {
 	}
 	
 	public boolean verificarCarrinho() throws Exception {
+		Thread.sleep(3000);
 		driver.findElement(By.id("nav-cart-count-container")).click(); 
 		WebElement btnFecharPedido = driver.findElement(By.xpath("//span[@class='a-button a-button-normal a-button-span12 a-button-primary']"));
 		boolean validaCarrinho = btnFecharPedido.isDisplayed();

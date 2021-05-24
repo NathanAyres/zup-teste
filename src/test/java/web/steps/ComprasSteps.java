@@ -13,9 +13,9 @@ public class ComprasSteps {
 	
 	ComprasAction compras = new ComprasAction(ThreadDriver.getTDriver());
 		
-	@Dado("^que pesquiso um iten no e-comerce amazon$")
-	public void que_pesquiso_um_iten_no_e_comerce_amazon() throws Throwable {
-		compras.pesquisarIten(Utils.obterDadosChave("item"));
+	@Dado("^que pesquiso um item no e-commerce amazon$")
+	public void que_pesquiso_um_item_no_e_commerce_amazon() throws Throwable {
+		compras.pesquisarItem(Utils.obterDadosChave("item"));
 	}
 
 	@Quando("^valido a pesquisa$")
@@ -29,8 +29,8 @@ public class ComprasSteps {
 		compras.adicionarCarrinho();
 	}
 
-	@E("^valido se o iten se encontra no carrinho$")
-	public void valido_se_o_iten_se_encontra_no_carrinho() throws Throwable {
+	@E("^valido se o item se encontra no carrinho$")
+	public void valido_se_o_item_se_encontra_no_carrinho() throws Throwable {
 		Assert.assertTrue(compras.verificarCarrinho());
 	}
 

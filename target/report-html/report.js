@@ -8,7 +8,7 @@ formatter.feature({
   ],
   "line": 3,
   "name": "Adicionar um item ao carrinho",
-  "description": "\r\nComo um usuario \r\nGostaria de pesquisar um iten\r\nE adicionar esse item ao carrinho",
+  "description": "\r\nComo um usuario \r\nGostaria de pesquisar um item\r\nE adicionar esse item ao carrinho",
   "id": "adicionar-um-item-ao-carrinho",
   "keyword": "Funcionalidade",
   "tags": [
@@ -19,7 +19,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 2379241600,
+  "duration": 2503925499,
   "status": "passed"
 });
 formatter.scenario({
@@ -38,7 +38,7 @@ formatter.scenario({
 });
 formatter.step({
   "line": 11,
-  "name": "que pesquiso um iten no e-comerce amazon",
+  "name": "que pesquiso um item no e-commerce amazon",
   "keyword": "Dado "
 });
 formatter.step({
@@ -53,39 +53,39 @@ formatter.step({
 });
 formatter.step({
   "line": 14,
-  "name": "valido se o iten se encontra no carrinho",
+  "name": "valido se o item se encontra no carrinho",
   "keyword": "E "
 });
 formatter.match({
-  "location": "ComprasSteps.que_pesquiso_um_iten_no_e_comerce_amazon()"
+  "location": "ComprasSteps.que_pesquiso_um_item_no_e_commerce_amazon()"
 });
 formatter.result({
-  "duration": 1199593500,
+  "duration": 1298152500,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprasSteps.valido_a_pesquisa()"
 });
 formatter.result({
-  "duration": 18698400,
+  "duration": 18203200,
   "status": "passed"
 });
 formatter.match({
   "location": "ComprasSteps.adiciono_esse_item_ao_carrinho()"
 });
 formatter.result({
-  "duration": 3817634100,
+  "duration": 3890864499,
   "status": "passed"
 });
 formatter.match({
-  "location": "ComprasSteps.valido_se_o_iten_se_encontra_no_carrinho()"
+  "location": "ComprasSteps.valido_se_o_item_se_encontra_no_carrinho()"
 });
 formatter.result({
-  "duration": 1262327600,
+  "duration": 4006676000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 617175900,
+  "duration": 654863299,
   "status": "passed"
 });
 });
